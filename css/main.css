@@ -1,0 +1,499 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-red-color: #bf3d42;
+    --main-white-color: #fff;
+}
+
+body {
+    font-family: auto;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+input:focus {
+    outline: none;
+}
+
+.lh-7 {
+    line-height: 1.7;
+}
+
+.lh-4 {
+    line-height: 1.4;
+}
+
+@media(min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media(min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/*  */
+
+
+/* start landing */
+.landing {
+    background: url(../images/banner-bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    overflow: hidden;
+}
+
+
+.landing header .logo {
+    margin-bottom: 15px;
+}
+
+
+.landing header .minu-btn {
+    color: var(--main-white-color);
+    cursor: pointer;
+    padding: 3px 5px;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.landing header .minu-btn.active {
+    color: #999;
+    border-color: #999;
+}
+
+.landing header .links {
+    width: 100%;
+    height: 0px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.landing header .links.active {
+    height: 217px;
+
+}
+
+.landing header .links li {
+    margin-bottom: 20px;
+}
+
+
+.landing header .links li a {
+    text-transform: capitalize;
+    color: var(--main-white-color);
+    transition: 0.3s;
+}
+
+.landing header .links li a:hover {
+    color: #999;
+}
+
+.landing header .links .search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    border-bottom: 1px solid var(--main-white-color);
+    width: fit-content;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.landing header .links .search input {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.landing header .links .search input:focus {
+    outline: none;
+}
+
+.landing header .links .search input::placeholder {
+    color: #999;
+}
+
+.landing .main {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.landing .main span:nth-child(1) {
+
+    display: block;
+    color: white;
+    font-size: 27px;
+    word-spacing: -5px;
+}
+
+.landing .main span:nth-child(2) {
+    display: block;
+    color: white;
+    font-size: 42px;
+    font-weight: 500;
+    letter-spacing: 12px;
+    margin: 20px 0;
+}
+
+.landing .main p {
+    max-width: 80%;
+    margin: auto auto 40px;
+    color: white;
+    line-height: 1.9;
+}
+
+.landing .main button {
+    padding: 14px 36px;
+    background-color: black;
+    color: white;
+    border-radius: 26px;
+    border: 3px solid #fff;
+    transition: 0.3s;
+}
+
+.landing .main button:hover {
+    background-color: transparent;
+}
+
+/* end landing */
+
+
+/* start about  */
+.about .container {
+    min-height: 60vh;
+}
+
+.about .container .info p {
+    line-height: 1.7;
+}
+
+.about .container .info button {
+    padding: 14px 36px;
+    background-color: var(--main-red-color);
+    color: white;
+    border-radius: 26px;
+    border: 3px solid #fff;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.about .container .info button:hover {
+    background-color: black;
+}
+
+/* end about  */
+
+/* start game */
+
+.game .holder .coll .play-btn {
+    display: block;
+    margin: 30px auto;
+    background-color: black;
+    padding: 12px 50px;
+    border-radius: 30px;
+    border: 3px solid var(--main-red-color);
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.game .holder .coll .play-btn:hover {
+    background-color: var(--main-red-color);
+}
+
+.game .holder .coll .item {
+    background-size: cover !important;
+    border-radius: 14px;
+}
+
+.game .holder .coll .item .info p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.game .holder .coll .item .info .number {
+    border-radius: 50%;
+    border: 2px solid var(--main-red-color);
+}
+
+/* end game */
+
+/* start play */
+.play {
+    min-height: 60vh;
+}
+
+.play .container>p {
+    line-height: 1.7;
+    color: #999;
+}
+
+.play .holder .item .image {
+    transition: 0.3s;
+}
+
+.play .holder .item .image:hover {
+    border-color: var(--main-red-color);
+}
+
+.play .play-btn {
+    display: block;
+    margin: 30px auto;
+    background-color: black;
+    padding: 12px 50px;
+    border-radius: 30px;
+    border: 3px solid var(--main-red-color);
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.play .play-btn:hover {
+    background-color: var(--main-red-color);
+}
+
+/* end play */
+
+/* start price */
+.price .holder .item .info {
+    border-radius: 10px;
+    border: 3px solid #999;
+    padding: 10px;
+}
+
+.price .holder .item .info .plan-type {
+    display: block;
+    color: var(--main-red-color);
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.price .holder .item .info .plan-price::before {
+    content: "$";
+    color: var(--main-red-color);
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+.price .buy-btn {
+    display: block;
+    margin: 30px auto;
+    background-color: var(--main-red-color);
+    padding: 12px 50px;
+    border-radius: 30px;
+    border: 3px solid var(--main-red-color);
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.price .buy-btn:hover {
+    background-color: black;
+}
+
+/* end price */
+
+/* start testimoniols */
+.testimoniols {}
+
+.testimoniols .holder {}
+
+.testimoniols .holder i {
+    width: 60px;
+    height: 60px;
+    display: block;
+    top: 25%;
+    background-color: var(--main-red-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.3s;
+    border: 2px solid var(--main-red-color);
+}
+
+.testimoniols .holder i.prev-slide {
+    left: 0px;
+}
+
+.testimoniols .holder i.next-slide {
+    right: 0px;
+}
+
+@media(max-width: 575px) {
+    .testimoniols .holder i {
+        top: calc(100% + 30px);
+    }
+}
+
+.testimoniols .holder i.full {
+    background-color: black;
+    pointer-events: none;
+}
+
+.testimoniols .holder .content {
+    min-height: 60vh;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+/* end testimoniols */
+
+
+/* start contact */
+.contact .holder {
+    min-height: 80vh;
+}
+
+.contact .holder .holder-layout {
+    border-radius: 10px;
+    padding-top: 20px;
+    box-shadow: 0 0 10px 0px #000;
+    position: relative;
+    z-index: 111111;
+    background-color: white;
+    bottom: -50px;
+}
+
+
+.contact .holder .holder-layout form input:not([type="submit"]),
+.contact .holder .holder-layout form select {
+    border: 1px solid #999;
+    padding: 14px 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contact .holder .holder-layout form input::placeholder,
+.contact .holder .holder-layout form textarea::placeholder,
+.contact .holder .holder-layout form select,
+.contact .holder .holder-layout form select option {
+    color: #999;
+    text-transform: capitalize;
+}
+
+.contact .holder .holder-layout form textarea {
+    height: 150px;
+    border: 1px solid #999;
+    padding: 14px 10px;
+    width: 100%;
+    resize: none;
+}
+
+.contact .holder .holder-layout form .send {
+    position: absolute;
+    display: block;
+    background-color: var(--main-red-color);
+    padding: 12px 50px;
+    border-radius: 34px;
+    border: 3px solid var(--main-red-color);
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    bottom: -60px;
+}
+
+.contact .holder .holder-layout .map {
+    min-height: 425px;
+
+}
+
+/* end contact */
+
+/* start footer */
+footer {
+    background-color: #252525;
+}
+
+footer .subsecribe {
+    border-bottom: 1px solid white;
+}
+
+footer .subsecribe input:first-child {
+    flex: 1;
+    background-color: transparent;
+    padding: 5px 8px;
+    color: white;
+}
+
+footer .subsecribe input:last-child {
+    width: 20%;
+    color: white;
+    text-align: right;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer .subsecribe input:last-child:hover {
+    color: var(--main-red-color);
+}
+
+footer .social i {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-red-color);
+    background-color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+footer .social i:hover {
+    color: white;
+    background-color: var(--main-red-color);
+}
+
+footer p>span {
+    font-size: 16px !important;
+    transition: 0.3s;
+    cursor: pointer;
+    font-family: system-ui;
+}
+
+footer p>span:hover {
+    color: var(--main-red-color);
+}
+
+/* end footer */
